@@ -39,11 +39,16 @@ initialize the project.
 ``` bash
 cd sass-class/class2-exercises/practice
 git init
+echo '.sass-cache/' >> .gitignore
+echo 'tmp/' >> .gitignore
 git add --all -v
 git commit -m "Initial Commit"
 git checkout -b dev
+
 cd ../../class1-exercises/practice
 git init
+echo '.sass-cache/' >> .gitignore
+echo 'tmp/' >> .gitignore
 git add --all -v
 git commit -m "Initial Commit"
 git checkout -b dev
