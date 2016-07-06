@@ -66,8 +66,9 @@ You can even start Atom right from the command line in the directory
 you're currently in, which is quite the best way to do it:
 
 ``` bash
-atom . # '.' means the current directory
+atom .
 ```
+> '.' means the current directory
 
 # Special Added Bonus!
 
