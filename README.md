@@ -21,7 +21,7 @@ Open up the command line and change directories to the place you
 downloaded the ZIP file, and unzip it.
 
 ``` bash
-cd Desktop/
+cd ~/GDIClasses/
 unzip html-320-stylin-with-sass-project-files-master.zip
 ```
 
