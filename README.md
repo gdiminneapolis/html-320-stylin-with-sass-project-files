@@ -62,10 +62,11 @@ necessary.
 Don't open individual files with either Atom or Sublime Text, or you
 might easily get confused.
 
-You can even start Atom right from the command line:
+You can even start Atom right from the command line in the directory
+you're currently in, which is quite the best way to do it:
 
 ``` bash
-atom .
+atom . # '.' means the current directory
 ```
 
 # Special Added Bonus!
