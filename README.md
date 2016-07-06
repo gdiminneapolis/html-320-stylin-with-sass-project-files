@@ -39,9 +39,18 @@ initialize the project.
 ``` bash
 cd sass-class/class2-exercises/practice
 git init
+git add --all -v
+git commit -m "Initial Commit"
+git checkout -b dev
 cd ../../class1-exercises/practice
 git init
+git add --all -v
+git commit -m "Initial Commit"
+git checkout -b dev
 ```
+
+You can create Github repos for this if you wish, but it's not
+necessary.
 
 ## Remember to open the **project folder**
 
