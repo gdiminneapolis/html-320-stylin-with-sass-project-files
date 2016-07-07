@@ -1,0 +1,75 @@
+// settings, variables, default values, etc.
+
+$body-bg: rgb(241, 241, 241);
+$accent-bg: #009D92;
+$contrast-color: #FFEECC;
+$accent-color: #FB000D;
+$link-color: darken($accent-bg, 5%);
+$link-hover-color: darken(invert($accent-bg), 30%);
+$link-accent-color: lighten($link-hover-color, 5%);
+$title-shadow: lighten($accent-color, 10%);
+$section-heading-color: white;
+$section-heading-bg: darken($body-bg, 70%);
+$years-heading: darken($body-bg, 70%);
+
+$nav-link-color: white;
+
+$jump-color: #565656;
+
+$box-shadow-color: #000;
+
+$footer-grad-start: #00665F;
+$footer-grad-mid: #1D766F;
+$footer-grad-end: $footer-grad-start;
+
+$footer-link-hover-color: #FFEECC;
+
+$article-bg-color: white;
+
+$organization-h2-shadow-color: $accent-color;
+$organization-bullet-color: $link-accent-color;
+$organization-shadow-color: #888;
+$organization-bullet: '6';
+
+$facts-accent-color: #FFA700;
+$facts-h2-shadow-color: $facts-accent-color;
+$facts-list-hover-color: #fff;
+$facts-bullet-color: $facts-accent-color;
+$facts-bullet: '7';
+$facts-shadow-color: #CCC;
+$facts-hover-before-color: #FF6F00;
+
+$default-font-stack: 'Lato', Arial, sans-serif;
+$default-font-size: 16px;
+$default-font-weight: 300;
+$default-line-height: 1.2em;
+
+$text-font-stack: $default-font-stack;
+$text-font-size: $default-font-size;
+$text-font-weight: $default-font-weight;
+$text-line-height: $default-line-height;
+
+$title-font-stack: 'Audiowide', cursive;
+$heading-font-stack: 'Quicksand', sans-serif;
+$icon-stack: 'EntypoRegular';
+
+$centered: 0 auto;
+$layout-width: 960px;
+$default-padding: 10px;
+$defaultPadding: $default-padding;
+
+
+$header-width: $layout-width - $default-padding*2;
+$nav-width: $layout-width/4;
+$nav-line-height: $text-font-size + $default-padding*2;
+$article-width: $layout-width/3 - $default-padding*4;
+$list-item-height: $default-font-size + $default-padding;
+$footer-width: $header-width;
+
+// rotate defaults
+$default-degree: -5;
+$default-position: 50% 0;
+
+// dropshadow defaults
+$default-dropshadow-color: $contrast-color;
+$default-dropshadow-pct: 50%;

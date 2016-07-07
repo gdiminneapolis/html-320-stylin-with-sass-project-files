@@ -1,0 +1,405 @@
+@import "settings";
+
+
+/* General Styles */
+body {
+    background-color: $background-primary;
+    font-family: $text-font-stack;
+    font-size: $text-font-size;
+    font-weight: $text-font-weight;
+    line-height: $text-line-height;
+    margin: 0px auto;
+    width: 100%;
+}
+
+p {
+    margin: 1em;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+
+    &:hover {
+	color: $link-hover-color;
+    }
+}
+
+h1 {
+    font-family: $h1-font-stack;
+    font-size: 2.2em;
+    float: left;
+    line-height: 75px;
+    text-shadow: 2px 2px $h1-shadow-color;
+}
+
+h2 {
+    background-color: $h2-bg-color;
+    color: $h2-fg-color;
+    font-family: $heading-font-stack;
+    font-size: 2.4em;
+    font-weight: 400;
+    line-height: 80px;
+    margin: 0 0 0.5em 0;
+    text-align: center;
+}
+
+h3 {
+    font-family: $heading-font-stack;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 0 0 0.3em 0;
+    text-align: center;
+}
+
+h4 {
+    color: $h4-fg-color;
+    font-size: 1em;
+    text-align: center;
+}
+
+
+/* Navigation */
+nav {
+    width: $nav-width;
+    li {
+	float: left;
+
+	a {
+	    color: $nav-link-color;
+	    margin: 0 10px;
+	    padding: 5px $default-padding;
+	    text-decoration: none;
+	    &:hover {
+		box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+		color: $nav-link-hover-color;
+	    }
+	}
+    }
+}
+
+.jump {
+    color: $jump-color;
+    font-family: $icon-stack;
+    font-size: 70px;
+    line-height: 80px;
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    &.up {
+	left: 15px;
+    }
+    &.down {
+	right: 15px;
+    }
+    &:hover {
+	color: #BC2F36;
+    }
+}
+
+/* Header */
+header {
+    margin: $centered;
+    width: $header-width;
+    background-color: $header-bg-color;
+    padding: $default-padding;
+
+    h1 {
+	color: $header-h1-color;
+	background: url('../../images/icons/it.png') no-repeat 0 50%;
+	padding-left: 40px;
+    }
+
+    nav {
+	float: right;
+	font-size: 1.2em;
+	margin-left: 20px;
+
+	li {
+	    line-height: $nav-line-height;
+	}
+
+	a {
+	    border-radius: 6px;
+	    // color: $nav-link-color;
+
+	    &:hover {
+		background-color: $nav-link-color;
+	    }
+	}
+    }
+
+    &:after {
+	/* clearfix hack */
+	content: "";
+	display: table;
+	clear: both;
+    }
+}
+
+/* Main */
+#main {
+    margin: $centered;
+    width: $layout-width;
+    section {
+	margin-bottom: 1em;
+	position: relative;
+    }
+
+    div.wrapper{
+	width: 100%;
+	max-width:1400px;
+	margin: $centered;
+    }
+
+    section:after {
+	/* clearfix hack */
+	content: "";
+	display: table;
+	clear: both;
+    }
+}
+
+/* Famous Women */
+#famous {
+    h2 {
+	text-shadow: 1px 1px 2px #009D92;
+    }
+
+    article {
+	&.woman {
+	    background-color: $article-bg-color;
+	    float: left;
+	    min-height: 250px;
+	    margin: 1%;
+	    opacity: 0.8;
+	    padding: $default-padding;
+	    width: $article-width;
+	}
+
+	&:hover {
+	    opacity: 1;
+	}
+
+	&:nth-child(4n) {
+	    clear: both;
+	}
+
+	img {
+	    border-radius: 50%;
+	    box-shadow: 0px 0px 5px $box-shadow-color;
+	    display: block;
+	    margin: 1em auto;
+	    width: 100%;
+
+	    &:hover {
+		-webkit-transform: rotate(-5deg);
+		-moz-transform: rotate(-5deg);
+		transform: rotate(-5deg);
+
+		-webkit-transform-origin: 50% 0;
+		-moz-transform-origin: 50% 0;
+		transform-origin: 50% 0;
+	    }
+	}
+    }
+}
+
+/* Organizations */
+#organizations {
+    clear: both;
+    height: 500px;
+
+    h2 {
+	text-shadow: 1px 1px 2px $organization-h2-shadow-color;
+    }
+
+    ul {
+	margin: 50px;
+	position: relative;
+
+	li {
+	    font-size: 1.2em;
+	    line-height: $list-item-height;
+	    margin-bottom: 1em;
+	    padding-left: 5px;
+	    max-width: 50%;
+
+	    &:before {
+		color: $organization-bullet-color;
+		content: $organization-bullet;
+		font-family: $icon-stack;
+		font-size: 40px;
+		opacity: 0.5;
+		padding-right: $default-padding;
+		text-shadow: 0px 0px 2px $organization-shadow-color;
+	    }
+
+	    &:hover:before {
+		opacity: 1;
+	    }
+	}
+    }
+
+    img {
+	border-radius: 20px;
+	position: absolute;
+	right: 20px;
+	top: 0;
+	max-width: 40%;
+	opacity: 0;
+
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	transition: opacity 1s;
+    }
+
+    li:hover img {
+	opacity: 1;
+    }
+
+}
+
+
+/* Fun Facts */
+#facts {
+    h2 {
+	text-shadow: 1px 1px 2px $facts-h2-shadow-color;
+    }
+    ul {
+	margin: 50px;
+	li {
+	    font-size: 1.2em;
+	    line-height: 1.3em;
+	    margin-bottom: 1em;
+	    padding-left: 5px;
+
+	    -webkit-transition: background-color 1s;
+	    -moz-transition: background-color 1s;
+	    transition: background-color 1s;
+
+	    &:hover {
+		background-color: $facts-list-hover-color;
+		border-radius: $default-padding;
+	    }
+	    &:before {
+		color: $facts-bullet-color;
+		content: $facts-bullet;
+		font-family: $icon-stack;
+		font-size: 30px;
+		padding-right: $default-padding;
+		text-shadow: 1px 1px 1px $facts-shadow-color;
+	    }
+
+	    &:hover:before {
+		color: $facts-hover-before-color;
+	    }
+	}
+    }
+}
+
+
+
+/* Footer */
+footer {
+    background-image: -webkit-linear-gradient($footer-grad-start, $footer-grad-mid, $footer-grad-end);
+    background-image: -moz-linear-gradient($footer-grad-start, $footer-grad-mid, $footer-grad-end);
+    background-image: linear-gradient($footer-grad-start, $footer-grad-mid, $footer-grad-end);
+
+    margin: $centered;
+    width: $footer-width;
+
+    nav {
+	float: left;
+	font-size: 1.1em;
+	margin: 10px;
+
+	a:hover {
+	    box-shadow: none;
+	    color: $footer-link-hover-color;
+	}
+    }
+    &:after {
+	/* clearfix hack */
+	content: "";
+	display: table;
+	clear: both;
+    }
+}
+
+
+
+/* Fonts */
+@font-face {
+    font-family: 'EntypoRegular';
+    src: url('font/Entypo-webfont.eot');
+    src: url('font/Entypo-webfont.eot?#iefix') format('embedded-opentype'),
+    url('font/Entypo-webfont.woff') format('woff'),
+    url('font/Entypo-webfont.ttf') format('truetype'),
+    url('font/Entypo-webfont.svg#EntypoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/** Tablet view **/
+@media screen and (max-width: $layout-width){
+    h1 {
+	font-size: 1.1em;
+	line-height: 40px;
+    }
+    header nav li{
+	line-height: 40px;
+    }
+}
+/** Mobile view **/
+@media screen and (max-width: 480px){
+    h1{
+	padding: 20px;
+	line-height: 40px;
+	span{
+	    display: none;
+	}
+    }
+    header nav{
+	margin-left: 5px;
+
+	li{
+	    line-height: 40px;
+	    a {
+		font-size: 0.9em;
+		margin: 3px;
+		padding: 1px;
+	    }
+	}
+    }
+    #famous article.woman {
+	float: none;
+	margin: 5px auto;
+	padding: 2%;
+	width: 80%
+    }
+    h2{
+	font-size: 2.0em;
+    }
+    #organizations{
+	height:auto;
+	ul li{
+	    max-width: 100%;
+	    img{
+		display:none;
+	    }
+	}
+    }
+    footer nav li {
+	line-height: 40px;
+	a {
+	    font-size: 0.9em;
+	    margin: 3px;
+	    padding: 1px;
+	}
+    }
+}

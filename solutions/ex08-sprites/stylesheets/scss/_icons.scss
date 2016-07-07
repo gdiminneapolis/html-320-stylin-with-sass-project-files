@@ -1,0 +1,31 @@
+// Icons created from the sprite file
+
+.icon {
+    @include sprite-image;
+    margin: 0 10px;
+    float: left;
+}
+.youtube {
+    @extend .icon;
+    @include sprite-position(0,0);
+}
+.twitter {
+    @extend .icon;
+    @include sprite-position(1,0);
+}
+.rss {
+    @extend .icon;
+    @include sprite-position(2,0);
+}
+.flickr {
+    @extend .icon;
+    @include sprite-position(3,0);
+}
+.facebook {
+    @extend .icon;
+    @include sprite-position(4,0);
+}
+.print {
+    @extend .icon;
+    @include sprite-position(5,0);
+}

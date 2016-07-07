@@ -1,0 +1,42 @@
+/* Header */
+header {
+    background-color: $accent-bg;
+    padding: $default-padding;
+    color: $contrast-color;
+    h1 {
+	color: $contrast-color;
+    }
+    @media screen and (min-width: $tablet-width) {
+	width: $header-width;
+	margin: $centered;
+	h1 {
+	    color: $contrast-color;
+	    background: url('../../images/icons/it.png') no-repeat 0 50%;
+	    padding-left: 40px;
+	}
+
+	nav {
+	    width: $nav-width;
+	    float: right;
+	    font-size: 1.2em;
+	    margin-left: 20px;
+
+	    li {
+		line-height: $nav-line-height;
+	    }
+
+	    a {
+		border-radius: 6px;
+		// color: $nav-link-color;
+
+		&:hover {
+		    background-color: $nav-link-color;
+		}
+	    }
+	}
+
+	&:after {
+	    @include clearfix;
+	}
+    }
+}

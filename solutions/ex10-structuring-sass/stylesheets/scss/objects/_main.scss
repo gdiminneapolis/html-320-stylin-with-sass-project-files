@@ -1,0 +1,28 @@
+/* Main */
+.main {
+    margin: $centered;
+    background-color: $main-bg;
+    section {
+	position: relative;
+    }
+
+    @media screen and (min-width: $tablet-width) {
+	width: $layout-width;
+
+	section {
+	    margin-bottom: 1em;
+	    position: relative;
+	    &:after {
+		@include clearfix;
+	    }
+	}
+
+	div.wrapper{
+	    width: 100%;
+	    max-width:1400px;
+	    margin: $centered;
+	}
+    }
+
+
+}

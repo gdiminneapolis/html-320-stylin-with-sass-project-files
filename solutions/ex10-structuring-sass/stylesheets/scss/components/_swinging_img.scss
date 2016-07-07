@@ -1,0 +1,9 @@
+/* Swinging Image */
+
+.swing-img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px $box-shadow-color;
+    display: block;
+    margin: 1em auto;
+    @include rotate-hover-transition(1s);
+}
