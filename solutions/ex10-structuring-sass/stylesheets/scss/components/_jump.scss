@@ -1,0 +1,19 @@
+/* Page Jump Icons */
+.jump {
+    color: $jump-color;
+    @include iconFont;
+    font-size: 70px;
+    line-height: 80px;
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    &.up {
+	left: 15px;
+    }
+    &.down {
+	right: 15px;
+    }
+    &:hover {
+	color: #BC2F36;
+    }
+}

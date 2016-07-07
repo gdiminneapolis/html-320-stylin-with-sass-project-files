@@ -1,0 +1,50 @@
+/*
+ * Social Sprite icons
+ */
+
+.icon {
+    @include sprite-image;
+    margin: 0 10px;
+    float: left;
+}
+
+// This will give us 18 icons, small, medium, and large for each of the 6 types
+@each $iconType in youtube, twitter, rss, flickr, facebook, print {
+    // I'm not exactly sure why, but these need to be pre-set
+    $column: 0;
+    $row: 0;
+    $size: "";
+
+    // mapping the icon type to it's column
+    @if $iconType == youtube {
+	$column: 0;
+    } @else if $iconType == twitter {
+	$column: 1;
+    } @else if $iconType == rss {
+	$column: 2;
+    } @else if $iconType == flickr {
+	$column: 3;
+    } @else if $iconType == facebook {
+	$column: 4;
+    } @else {
+	$column: 5;
+    }
+
+    @for $row from 0 through 2 {
+
+	// mapping the row to it's icon size
+	@if $row == 0 {
+	    $size: "-large";
+	} @else if $row == 1 {
+	    $size: "";
+	} @else {
+	    $size: "-small";
+	}
+
+	.#{$iconType}#{$size} {
+	    @extend .icon;
+	    @include sprite-position($column, $row);
+	}
+
+    }
+}

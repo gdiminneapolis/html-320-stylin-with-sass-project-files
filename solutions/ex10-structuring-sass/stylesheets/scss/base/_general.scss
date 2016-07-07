@@ -1,0 +1,56 @@
+/* General Styles */
+body {
+    background-color: $body-bg;
+    @include flexibleGradient;
+    font-family: $text-font-stack;
+    font-size: $text-font-size;
+    font-weight: $text-font-weight;
+    line-height: $text-line-height;
+    margin: 0px auto;
+    width: 100%;
+}
+
+p {
+    margin: 1em;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+    @include hover-transition(color, $link-hover-color, 0.3s);
+}
+
+h1 {
+    font-family: $title-font-stack;
+    @include dropshadow($title-shadow);
+    @media screen and (min-width: $tablet-width) {
+	font-size: 2.2em;
+	float: left;
+	line-height: 75px;
+    }
+}
+
+h2 {
+    background-color: $section-heading-bg;
+    color: $section-heading-color;
+    font-family: $heading-font-stack;
+    font-size: 2.4em;
+    font-weight: 400;
+    line-height: 80px;
+    margin: 0 0 0.5em 0;
+    text-align: center;
+}
+
+h3 {
+    font-family: $heading-font-stack;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 0 0 0.3em 0;
+    text-align: center;
+}
+
+h4 {
+    color: $years-heading;
+    font-size: 1em;
+    text-align: center;
+}

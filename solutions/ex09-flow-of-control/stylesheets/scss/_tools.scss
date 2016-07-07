@@ -1,0 +1,156 @@
+// Tools: mixins, extendables, etc
+
+// The clearfix, to clear those pesky floats
+@mixin clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+// Give text a drop-shadow effect
+//
+// @param $color -- specify a color for the text,
+//                  the shadow will be calculated from it.
+// @param $percentage - amount to darken the text shadow.
+@mixin dropshadow($color: $default-dropshadow-color, $percentage: $default-dropshadow-pct) {
+    color: $color;
+    text-shadow: 2px 2px darken($color, $percentage);
+}
+
+// Add the necessary prefixes to the linear-gradient
+//
+// @param $color1 - starting and ending color for the gradient
+// @param $color2 - midway color for the gradient
+@mixin gradient($color1: $body-bg, $color2: $accent-bg) {
+    background-image: -webkit-linear-gradient($color1, $color2, $color2);
+    background-image: -moz-linear-gradient($color1, $color2, $color1);
+    background-image: linear-gradient($color1, $color2, $color1);
+}
+
+// Linear OR Diagonal Gradient, including IE
+//
+// @param $topColor, $bottomColor -- colors for the two ends of the gradient
+// @param $angle [default, numeric in degrees] -- keys for the gradient direction
+@mixin flexibleGradient($topColor: $accent-fg, $bottomColor: $accent-bg, $angle: default) {
+    background-color: $topColor;
+
+    @if $angle == default { // linear top to bottom
+	background-image: -moz-linear-gradient(top, $topColor, $bottomColor);
+	background-image: -webkit-gradient(linear,left top,left bottom, color-stop(0, $topColor),color-stop(1, $bottomColor));
+	background: -webkit-linear-gradient($topColor, $bottomColor);
+	background: -o-linear-gradient($topColor, $bottomColor);
+	background: -ms-linear-gradient($topColor, $bottomColor);
+	background-image: linear-gradient(top,$topColor, $bottomColor);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$topColor}', EndColorStr='#{$bottomColor}');
+    } @else {
+	background-image: -moz-linear-gradient(#{$angle}deg, $bottomColor 0%, $topColor 100%);
+	background-image: -webkit-gradient(linear,left bottom,right top, color-stop(0%, $bottomColor),color-stop(100%, $topColor));
+	background: -webkit-linear-gradient(#{$angle}deg,  $bottomColor 0%, $topColor 100%);
+	background: -o-linear-gradient(#{$angle}deg,  $bottomColor 0%, $topColor 100%);
+	background: -ms-linear-gradient(#{$angle}deg,  $bottomColor 0%, $topColor 100%);
+	background-image: linear-gradient(#{$angle}deg, $bottomColor 0%, $topColor 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$bottomColor}', EndColorStr='#{$topColor}',GradientType=1);
+    }
+}
+
+// Rotate an object
+//
+// @param $degree - numerical degree by which to rotate the item.
+//                  Format should be like "15" (no suffix).
+// @param $position - positional offset for centering the rotation.
+//                    Requires both x and y offsets.
+//                    Format like "50% 0"
+@mixin rotate($degree: $default-degree, $position: $default-position) {
+    $deg: #{$degree}deg;
+    -webkit-transform: rotate($deg);
+    -moz-transform: rotate($deg);
+    transform: rotate($deg);
+
+    -webkit-transform-origin: $position;
+    -moz-transform-origin: $position;
+    transform-origin: $position;
+}
+
+/* Fonts */
+@mixin font-face($family, $filename) {
+    @font-face {
+	font-family: $family;
+	src: url('font/#{$filename}-webfont.eot');
+	src: url('font/#{$filename}-webfont.eot?#iefix') format('embedded-opentype'),
+	url('font/#{$filename}-webfont.woff') format('woff'),
+	url('font/#{$filename}-webfont.ttf') format('truetype'),
+	url('font/#{$filename}-webfont.svg##{$family}') format('svg');
+    }
+}
+
+@include font-face($icon-family, $icon-font);
+
+@mixin iconFont {
+    font-family: $icon-family;
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* Sprites */
+
+// Image replacement - accessibly hides text when you want to use a background image instead
+@mixin image-replace {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+// Create the sprite position using an integer grid.
+// This allows the sprites to be determined incrementally.
+//
+// @param $x, $y - position of the sprite on the grid
+@mixin sprite-position($x:0, $y:0, $gridSize: $sprite-grid-size) {
+    $offsetX:   $x * $gridSize * -1;
+    $offsetY:   $y * $gridSize * -1;
+    background-position: $offsetX $offsetY;
+}
+
+// Create a specific sprite image
+//
+// @param $file -- the sprite image file basename
+// @param $x, $y -- position of the sprite on the grid (0,0), (0,1), etc
+@mixin sprite-image($file: $sprite-file, $x:0, $y:0, $gridSize: $sprite-grid-size) {
+    display: block;
+    background-image: url("#{$sprite-sheet-path}/#{$file}");
+    @include sprite-position($x, $y, $gridSize);
+    @include image-replace;
+    width: $gridSize;
+    height: $gridSize;
+}
+
+
+/* Opacity */
+@mixin opacity($opacity: 0.5) {
+    filter: alpha(opacity=$opacity*100);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=#{$opacity*100});
+    opacity: $opacity;
+}
+
+/* Transitions  */
+@mixin transition($property, $length) {
+    -webkit-transition: $property $length;
+    -moz-transition: $property $length;
+    transition: $property $length;
+}
+
+@mixin hover-transition($property, $value, $length) {
+    @include transition($property, $length);
+    &:hover {
+	#{$property}: $value;
+    }
+}
+
+@mixin multi-hover-transition($propertyList, $length) {
+    @include transition(all, $length);
+    &:hover {
+	@each $property, $value in $propertyList {
+	    #{$property}: $value;
+	}
+    }
+
+}

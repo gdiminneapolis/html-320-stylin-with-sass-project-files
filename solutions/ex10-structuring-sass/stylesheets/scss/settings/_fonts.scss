@@ -1,0 +1,17 @@
+/* Font Settings */
+
+$default-font-stack: 'Lato', Arial, sans-serif;
+$default-font-size: 16px;
+$default-font-weight: 300;
+$default-line-height: 1.2em;
+
+$text-font-stack: $default-font-stack;
+$text-font-size: $default-font-size;
+$text-font-weight: $default-font-weight;
+$text-line-height: $default-line-height;
+
+$title-font-stack: 'Audiowide', cursive;
+$heading-font-stack: 'Quicksand', sans-serif;
+$icon-font: 'Entypo';
+$icon-family: '#{$icon-font}Regular';
+$icon-stack: $icon-family;

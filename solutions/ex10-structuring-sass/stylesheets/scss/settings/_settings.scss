@@ -1,0 +1,23 @@
+// settings, variables, default values, etc.
+
+@import "colors";
+@import "fonts";
+@import "layouts";
+
+// bullets
+$organization-bullet: '6';
+$facts-bullet: '7';
+
+
+// rotate defaults
+$default-degree: -5;
+$default-position: 50% 0;
+
+// dropshadow defaults
+$default-dropshadow-color: $contrast-color;
+$default-dropshadow-pct: 50%;
+
+// sprites
+$sprite-grid-size: 32px;
+$sprite-sheet-path: "../../images/icons";
+$sprite-file: "sprite.png";
