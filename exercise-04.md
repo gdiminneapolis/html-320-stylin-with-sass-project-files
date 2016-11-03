@@ -1,3 +1,8 @@
+# Move the reset to the elements file
+
+Move the line where you import the reset file from
+`sass/_overrides.scss` to the `sass/_elements.scss` file.
+
 # Variables and Settings
 
 Extract and replace constants from the overrides file and turn them
