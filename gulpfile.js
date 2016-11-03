@@ -27,11 +27,11 @@ gulp.task('serve', ['build'], function(){
         server: '.'
     });
     gulp.watch([
-            './*.html',
             './sass/**/*.scss',
             './sass/**/*.sass'
         ],
-        ['build'])
+        ['build']);
+    gulp.watch('*.html').on('change', browserSync.reload)
 });
 gulp.task('default', ['serve']);
 gulp.task('help', help);
