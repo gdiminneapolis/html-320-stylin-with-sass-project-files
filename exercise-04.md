@@ -1,17 +1,10 @@
 # Move the reset to the elements file
 
 Move the line where you import the reset file from
-`sass/_overrides.scss` to the `sass/_elements.scss` file.
+`sass/_overrides.scss` to the `sass/_elements.scss` file. Keep it the
+first thing in the file.
 
-# Variables and Settings
+# Extract the elements
 
-Extract and replace constants from the overrides file and turn them
-into variables in the settings file.
-
-## Tips:
-
-Look for things like colours, repeated values, font declarations.
-
-Give variables useful and memorable names. `$lightGrey` is less useful
-than `$brandBackground`, for example. Variable names should imply how
-they are used.
+Find the elements (styles on HTML elements like `body`, `h1`, `p`,
+etc.) and move them to the `sass/_elements.scss` file.
