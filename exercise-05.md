@@ -10,3 +10,12 @@ these to proper classes.
 To differentiate between objects and components, consider that objects
 are generally composed of components, but components may appear in
 many objects.
+
+For small sites, such as this one, it's perfectly fine to put all the
+objects in the `sass/_objects.scss` file, and all the components in
+the `sass/_components.scss` file.
+
+However, when you're projects get larger, it's often better to keep
+the objects and components in their own files. Create an `objects`
+subfolder and put each object in it's own file:
+`sass/objects/_site-header.scss` for example.
