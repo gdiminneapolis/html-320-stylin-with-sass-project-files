@@ -4,14 +4,15 @@
 
 FIRST: check to see if you already have Node installed. Start a
 command line program (`cmd.exe` or `powershell.exe` on Windows,
-Terminal.app on Mac, xterm on Linux). Run the commands:
+Terminal.app on Mac, xterm on Linux).
+
+Verify that your `node` and `npm` commands are *new* enough by running
+the commands:
 
 ```bash
 node -v
 npm -v
 ```
-
-Verify that:
 
 * your Node version is at least 6 and
 * your npm version at least 3.
