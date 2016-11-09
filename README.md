@@ -67,7 +67,7 @@ Each of the exercises we'll be on is a separate git branch. You will
 check out the branch to start working on the exercise.
 
 
-The branches are:
+The exercise branches are:
 
 1. `exercise/01-new-sass-folder`
 2. `exercise/02-single-css-file`
@@ -85,10 +85,13 @@ You can see the branches on the remote `origin` with the command:
 git branch -r
 ```
 
+(There will likely be other branches listed, you can safely ignore
+them. We're only interested in the exercise branchews.)
+
 To check out the first exercise branch, enter the command:
 
 ```bash
-git checkout -b exercise/01-new-sass-folder origin/exericse/01-new-sass-folder
+git checkout -b exercise/01-new-sass-folder origin/exercise/01-new-sass-folder
 ```
 
 ## Working on the Exercises
