@@ -94,6 +94,11 @@ To check out the first exercise branch, enter the command:
 git checkout -b exercise/01-new-sass-folder origin/exercise/01-new-sass-folder
 ```
 
+In each exercise branch, there is a corresponding file called
+`exercise-XX.md` (where `XX` corresponds to the exercise number,
+e.g. `exercise-01.md` for excerise 1) Open that file in your editor
+and read the instructions for the exercise.
+
 ## Working on the Exercises
 
 After we complete an exercise and discuss it, we'll be pulling down a
