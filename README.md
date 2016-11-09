@@ -6,10 +6,21 @@ here carefully all the way through first, then follow them.
 
 ## Requirements
 
+### Git
+
+This course **requires** the use of git to acquire the exercises, 
+so you must have it installed. Go to [git-scm.com/downloads](https://git-scm.com/downloads)
+and make sure you have the latest version for your operating
+system.
+
+As an added bonus, when you install Git on Windows, you will
+get a copy of `git-bash` that you can run all the command
+lines we'll be using.
+
 ### [Node.JS](https://nodejs.org/en/download/)
 
 FIRST: check to see if you already have Node installed. Start a
-command line program (`cmd.exe` or `powershell.exe` on Windows,
+command line program (`git-bash` on Windows,
 Terminal.app on Mac, `xterm` on Linux).
 
 Verify that your `node` and `npm` commands are *new* enough by running
@@ -39,7 +50,7 @@ class.
 We recommend:
 
 * [Atom](https://atom.io/)
-* [Sublime Text](https://atom.io/)
+* [Sublime Text](https://www.sublimetext.com/)
 
 We can help with most problems on these two.
 
@@ -66,9 +77,10 @@ Since we'll be doing a lot of CSS-type work, you're going to want to
 leave the development tools of the browser open while we work on the
 site.
 
-## Installing
+## Installing the Project Files
 
-Clone the project files
+Clone the project files into a folder on your Desktop by entering
+the following into the command line:
 
 ```bash
 cd Desktop
@@ -99,8 +111,10 @@ Note: Normally, you'll just leave the watcher running while we work on
 assignments. You can also stop the watcher at any time by typing
 Control-C (^C, C-c) in the same terminal / command window the watcher
 is running in. (On Windows, if asked "Terminate batch job (Y/N)?" type
-"Y" and return. (There may be times when the watcher stops "watching"
-for some reason so you may need to do this.)
+"Y" and return. 
+
+There may be times when the watcher stops "watching"
+for some reason so you may need to do this.
 
 ## Working on the class files
 
@@ -114,7 +128,10 @@ See
 [Opening a project in your editor](https://github.com/gdiminneapolis/gdi-starting-up/blob/master/opening-projects-in-your-editor.md)
 for more information on this.
 
-Each of the exercises we'll be on is a separate git branch. You will
+## The Class Exercises
+
+Each of the exercises we'll be working on is a separate git branch. 
+At the start of each exercise, you will
 check out the branch to start working on the exercise.
 
 The exercise branches are:
@@ -135,19 +152,20 @@ You can see the branches on the remote `origin` with the command:
 git branch -r
 ```
 
-(There will likely be other branches listed, you can safely ignore
-them. We're only interested in the exercise branchews.)
+There will likely be other branches listed, you can safely ignore
+them. We're only interested in the exercise branches.
 
 In each exercise branch, there is a corresponding file called
-`exercise-XX.md` (where `XX` corresponds to the exercise number,
-e.g. `exercise-01.md` for excerise 1)
+`exercise-XX-short-desc.md` (where `XX` corresponds to the exercise number,
+e.g. `exercise-01-new-sass-folder.md` for excerise 1). These are the instructions for
+the exercise.
 
 ## Starting the First Exercise
 
 To check out the first exercise branch, enter the command:
 
 ```bash
-git checkout -b exercise/01-new-sass-folder origin/exercise/01-new-sass-folder
+git checkout -b ex.01 origin/ex.01
 ```
 
 Run the `npm install` command, and then `npm start`. You can leave it
@@ -168,10 +186,14 @@ steps of the
 (Add, Commit, Push) and then prepare for the next exercise:
 
 ```bash
+# Control-C to stop the watcher
 git add --all --verbose # Add changes to the index
 git commit -m "My work on exercise 1" # commit the changes to the local repo
 # we're skipping the 3rd part of the dance, you won't push any changes
 #
 # Now check out the next exercise:
-git checkout -b exercise-02 origin/exercise-02
+git checkout -b ex.02 origin/ex.02
+# Restart the watcher
+npm start
 ```
+
