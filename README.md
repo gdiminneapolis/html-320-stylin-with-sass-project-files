@@ -63,10 +63,13 @@ for some reason so you may need to do this.)
 
 ## Working on the Exercises
 
-After we complete an exercise and discuss it, we'll be pulling down a new branch to start
-all together with a clean slate for the next exercise. You may want to save the work you
-did on that exercise. You can do that easily since it's a Git repository with the first
-two steps of the Git Dance and then prepare for the next exercise:
+After we complete an exercise and discuss it, we'll be pulling down a
+new branch to start all together with a clean slate for the next
+exercise. You may want to save the work you did on that exercise. You
+can do that easily since it's a Git repository with the first two
+steps of the
+[Git Dance](https://github.com/gdiminneapolis/falling-in-love-with-git/wiki/The-%22Git-Dance%22)
+(Add, Commit, Push) and then prepare for the next exercise:
 
 ```bash
 git add --all --verbose # Add changes to the index
