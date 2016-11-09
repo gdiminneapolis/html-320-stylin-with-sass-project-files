@@ -1,3 +1,9 @@
+# Project Files for the "Stylin with Sass" class
+
+This repository contains the project files and exercises you'll be
+using during the "Stylin with Sass" class. Read the instructions
+here carefully all the way through first, then follow them.
+
 ## Requirements
 
 ### [Node.JS](https://nodejs.org/en/download/)
@@ -69,11 +75,12 @@ important you work from the *folder* instead of using Explorer or
 Finder to open individual files because it's too easy to lose track of
 where the files are in your system.
 
-## Starting the First Exercise
+See
+[Opening a project in your editor](https://github.com/gdiminneapolis/gdi-starting-up/blob/master/opening-projects-in-your-editor.md)
+for more information on this.
 
 Each of the exercises we'll be on is a separate git branch. You will
 check out the branch to start working on the exercise.
-
 
 The exercise branches are:
 
@@ -96,16 +103,20 @@ git branch -r
 (There will likely be other branches listed, you can safely ignore
 them. We're only interested in the exercise branchews.)
 
+In each exercise branch, there is a corresponding file called
+`exercise-XX.md` (where `XX` corresponds to the exercise number,
+e.g. `exercise-01.md` for excerise 1)
+
+## Starting the First Exercise
+
 To check out the first exercise branch, enter the command:
 
 ```bash
 git checkout -b exercise/01-new-sass-folder origin/exercise/01-new-sass-folder
 ```
 
-In each exercise branch, there is a corresponding file called
-`exercise-XX.md` (where `XX` corresponds to the exercise number,
-e.g. `exercise-01.md` for excerise 1) Open that file in your editor
-and read the instructions for the exercise.
+Open `exercise-01.md` in your editor for the instructions for the
+first exercise.
 
 ## Working on the Exercises
 
