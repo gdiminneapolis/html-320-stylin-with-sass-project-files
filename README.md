@@ -61,6 +61,36 @@ is running in. (On Windows, if asked "Terminate batch job (Y/N)?" type
 "Y" and return. (There may be times when the watcher stops "watching"
 for some reason so you may need to do this.)
 
+## Starting the First Exercise
+
+Each of the exercises we'll be on is a separate git branch. You will
+check out the branch to start working on the exercise.
+
+
+The branches are:
+
+1. `exercise/01-new-sass-folder`
+2. `exercise/02-single-css-file`
+3. `exercise/03-itcss-structure`
+4. `exercise/04-extract-elements`
+5. `exercise/05-finding-objects-and-components`
+6. `exercise/06-setting-and-tools`
+7. `exercise/07-nesting-and-refactoring`
+8. `exercise/08-theming`
+9. `exercise/09-wrapping-up`
+
+You can see the branches on the remote `origin` with the command:
+
+```bash
+git branch -r
+```
+
+To check out the first exercise branch, enter the command:
+
+```bash
+git checkout -b exercise/01-new-sass-folder origin/exericse/01-new-sass-folder
+```
+
 ## Working on the Exercises
 
 After we complete an exercise and discuss it, we'll be pulling down a
