@@ -31,6 +31,41 @@ node for your computer and follow the instructions to install it.
 After you've done that, run the two commands above and make sure they
 meet the requirements.
 
+### Code Editor
+
+Make sure you have a code editor you can use to do the exericses in
+class.
+
+We recommend:
+
+* [Atom](https://atom.io/)
+* [Sublime Text](https://atom.io/)
+
+We can help with most problems on these two.
+
+You can also use:
+
+* [WebStorm](https://www.jetbrains.com/webstorm/)
+* [Visual Code](https://code.visualstudio.com/)
+* [Xcode](https://developer.apple.com/xcode/) (only on a Mac)
+
+If you have a favourite editor not listed, certainly you can use it,
+but we might not know how to help if you run into problems with it.
+
+We do **not** recommend anyone use plain old `Notepad.exe` on
+Windows.
+
+### Browser
+
+While any of the modern browsers can be used, including Chrome, Firefox,
+Safari, or Edge, this class is set up to use Chrome, so make sure you
+have it installed. See https://www.google.com/chrome/browser/desktop/
+to make sure you have a copy of Chrome installed.
+
+Since we'll be doing a lot of CSS-type work, you're going to want to
+leave the development tools of the browser open while we work on the
+site.
+
 ## Installing
 
 Clone the project files
@@ -114,6 +149,10 @@ To check out the first exercise branch, enter the command:
 ```bash
 git checkout -b exercise/01-new-sass-folder origin/exercise/01-new-sass-folder
 ```
+
+Run the `npm install` command, and then `npm start`. You can leave it
+running while you work on the exercise. (As mentioned above, keep the
+browser tools open on the window the `npm start` command opens up.)
 
 Open `exercise-01.md` in your editor for the instructions for the
 first exercise.
