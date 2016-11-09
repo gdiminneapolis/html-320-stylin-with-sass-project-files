@@ -61,6 +61,14 @@ is running in. (On Windows, if asked "Terminate batch job (Y/N)?" type
 "Y" and return. (There may be times when the watcher stops "watching"
 for some reason so you may need to do this.)
 
+## Working on the class files
+
+Open the project **folder** in your code editor. How this is done
+depends upon which editor you are using, but they can all do it. It's
+important you work from the *folder* instead of using Explorer or
+Finder to open individual files because it's too easy to lose track of
+where the files are in your system.
+
 ## Starting the First Exercise
 
 Each of the exercises we'll be on is a separate git branch. You will
