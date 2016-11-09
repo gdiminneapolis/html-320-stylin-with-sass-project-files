@@ -2,6 +2,7 @@
 'use strict';
 
 var gulp = require('gulp');
+var plumber = require('gulp-plumber');
 var sass = require('gulp-sass');
 var help = require('gulp-task-listing');
 var browserSync = require('browser-sync');
@@ -13,9 +14,11 @@ gulp.task('sass', function () {
            'sass/**/*.scss',
            'sass/**/*.sass'
        ])
+       .pipe(plumber())
        .pipe(sourcemaps.init())
        .pipe(sass().on('error', sass.logError))
        .pipe(sourcemaps.write())
+       .pipe(plumber.stop())
        .pipe(gulp.dest('css'))
        .pipe(browserSync.stream())
 });
