@@ -4,7 +4,7 @@
 
 FIRST: check to see if you already have Node installed. Start a
 command line program (`cmd.exe` or `powershell.exe` on Windows,
-Terminal.app on Mac, xterm on Linux).
+Terminal.app on Mac, `xterm` on Linux).
 
 Verify that your `node` and `npm` commands are *new* enough by running
 the commands:
@@ -14,8 +14,8 @@ node -v
 npm -v
 ```
 
-* your Node version is at least 6 and
-* your npm version at least 3.
+* your `node` version is at least 6 and
+* your `npm` version at least 3.
 
 If you have older versions, or if you get errors trying to run those
 programs, then head over to https://nodejs.org/en/download and follow
