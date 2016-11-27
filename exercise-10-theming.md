@@ -13,8 +13,8 @@ to create two root themes.
 
 Create two files:
 
-1. `sass/_light.scss` (**with** underscore)
-2. `sass/dark.scss` (**without** underscore)
+1. `sass/_light.scss`
+2. `sass/_dark.scss`
 
 Import the `_light` file into your `_settings` file.
 
@@ -55,25 +55,10 @@ Since the `light` theme is our default, give all the variables a `!default` opti
 $baseTextColor: #000 !default;
 ```
 
-## Create a dark theme
-
-Copy over the variables in the `light` theme to the `dark` theme, and
-comment them all out.
-
-Looking at the `light` colours, try to come up with a good set that will
-make the site have a dark theme, just by changing the variable values.
-
-For each variable you change, put it below the light variable line (that is commented out).
-This makes it clear what's changing, and makes it nicer than switching back
-and forth.
-
-You might find that some variables won't change.
-
 ## Create Modifiers for Color Components
 
 Extract the color settings in the various elements, objects, and components,
-and turn them into a set of theming components. Create a file
-`sass/components/_theme.scss` and put the Modifiers in it.
+and turn them into a set of theming components.
 
 For example, `body` in `_elements` would become:
 
@@ -88,7 +73,7 @@ body {
 }
 ```
 
-A new modifier in `_theme` would be:
+A new modifier in `_page-body` would be:
 
 ```scss
 .page-body--base-color {
@@ -103,7 +88,7 @@ and add the modifer to the html:
 <body class="page-body--base-color"
 ```
 
-And assuming `_light` contains:
+And assuming `light` contains:
 
 ```scss
 $baseTextColor: #000 !default;
@@ -121,6 +106,8 @@ $baseBackgroundColor: #000;
 
 It's best to start with the generic and move to the explicit in redefining
 a theme.
+
+To see your dark theme, import it after the light theme in settings.
 
 ## Extra credit: fonts
 
