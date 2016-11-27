@@ -1,16 +1,9 @@
-// This is where major page objects will go.
+// This is where major page objects get imported.
+// Each page object will live under the `sass/objects/` directory (which you'll create)
+// This exercise is making the page header and page footer objects, so you'll need to import them:
 //
-// A hint is look for parts on the page with `id` attributes.
-// In original work, there have been what should be objects (or components)
-// that have been created using just element names. Refactor them into
-// objects or components as makes most sense to you.
+// @import "objects/page-header";
+// @import "objects/page-footer";
 //
-// Sometimes it makes sense to put each object into it's own partial file.
-// Create a directory called `objects` and put each object you find into a partial file
-// in that directory (e.g. `objects/_famous.scss`).
-//
-// Then import them in this file, such as:
-//
-// @import "objects/famous";
-//
-// Remember to prefix the partial name (not the directory name!) with an underscore.
+// Remember to include the underscore on the file names, but omit it in the `@import` directive.
+// Also you don't have to include the filename extension in the `@import` directive, sass will figure it out.

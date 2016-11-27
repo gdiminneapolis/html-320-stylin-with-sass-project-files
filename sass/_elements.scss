@@ -58,7 +58,7 @@ h4 {
   text-align: center;
 }
 
-
+// Extract the nav element entries and paste them in both the page header and page footer files
 /* Navigation */
 nav li {
   float: left;
@@ -74,6 +74,7 @@ nav li a:hover {
   color: #FB000D;
 }
 
+// Extract the header element entries and paste them into the page header file
 /* Header */
 header {
   background-color: #009D92;
@@ -106,6 +107,7 @@ header:after {
   clear: both;
 }
 
+// Extract the footer element entries and paste them into the page footer file
 /* Footer */
 footer {
   background-image: -webkit-linear-gradient(#00665F, #1D766F, #00665F);
