@@ -28,8 +28,10 @@
 <main role="main">
   <section id="famous">
     <h2>Famous Women</h2>
-    <a class="jump up" href="#">&igrave;</a>
-    <a class="jump down" href="#organizations">&iacute;</a>
+    <nav class="jump-nav">
+      <a class="jump-nav__link jump-nav--up" href="#">&igrave;</a>
+      <a class="jump-nav__link jump-nav--down" href="#organizations">&iacute;</a>
+    </nav>
     <div class = "wrapper">
       <article class="woman-card" itemscope itemtype = "http://schema.org/Person">
         <h3 class="woman-card__title">
@@ -90,12 +92,13 @@
 
   <section id="organizations">
     <h2>Organizations</h2>
-    <a class="jump up" href="#famous">&igrave;</a>
-    <a class="jump down" href="#facts">&iacute;</a>
+    <nav class="jump-nav">
+      <a class="jump-nav__link jump-nav--up" href="#famous">&igrave;</a>
+      <a class="jump-nav__link jump-nav--down" href="#facts">&iacute;</a>
+    </nav>
     <div class = "wrapper">
       <p>These are some awesome organizations that help women in computing.
         This is a brief list and there are many more out there.</p>
-
       <ul>
         <li>
           <a href="http://www.ncwit.org/">National Center for Women & Information Technology</a>
@@ -127,8 +130,10 @@
 
   <section id="facts">
     <h2>Fun Facts</h2>
-    <a class="jump up" href="#organizations">&igrave;</a>
-    <a class="jump down" href="#bottom">&iacute;</a>
+    <nav class="jump-nav">
+      <a class="jump-nav__link jump-nav--up" href="#organizations">&igrave;</a>
+      <a class="jump-nav__link jump-nav--down" href="#bottom">&iacute;</a>
+    </nav>
     <div class = "wrapper">
       <ul>
         <li>Every year the Anita Borg Institute holds the
