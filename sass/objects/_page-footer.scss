@@ -10,16 +10,28 @@
   margin: 10px;
 }
 
-.page-footer__list {
-  font-size: 1.1em;
-}
+.page-footer__list {}
 
 .page-footer__list-item {
   float: left;
+  line-height: 40px;
+
+  @media screen and (min-width: $mobile-width){
+    line-height: 75px;
+  }
 }
 
 .page-footer__list-link {
   @include page-nav-links;
+  font-size: 0.9em;
+  margin: 3px;
+  padding: 1px;
+
+  @media screen and (min-width: $mobile-width) {
+    font-size: 1.2em;
+    margin: 0px 10px;
+    padding: 5px 10px;
+  }
 
   &:hover {
     color: #FFEECC;

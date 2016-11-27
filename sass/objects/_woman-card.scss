@@ -1,0 +1,65 @@
+
+.woman-card {
+  background-color: white;
+  min-height: 250px;
+  opacity: 0.8;
+
+  margin: 5px auto;
+  padding: 2%;
+  width: 80%;
+
+  @media screen and (min-width: $mobile-width) {
+    float: left;
+    margin: 1%;
+    padding: 2%;
+    width: 27.33%;
+
+    &:nth-child(4n) {
+      clear:both;
+    }
+
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &__title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1em;
+    line-height: 40px;
+    margin: 0 0 0.3em 0;
+    text-shadow: 1px 1px 2px #009D92;
+    padding: 20px;
+  }
+
+  &__life-span {
+    color: rgb(120, 120, 120);
+    font-size: 1em;
+    text-align: center;
+  }
+
+  &__bio {
+
+  }
+
+  &__portrait {
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px #000;
+    display: block;
+    margin: 1em auto;
+    width: 100%;
+  }
+
+  &--swing:hover {
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+  }
+
+
+}
