@@ -1,14 +1,8 @@
 .page-footer {
+  @extend .clearfix;
   background-image: -webkit-linear-gradient(#00665F, #1D766F, #00665F);
   background-image: -moz-linear-gradient(#00665F, #1D766F, #00665F);
   background-image: linear-gradient(#00665F, #1D766F, #00665F);
-}
-
-.page-footer:after {
-  /* clearfix hack */
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .page-footer__nav {
@@ -25,14 +19,12 @@
 }
 
 .page-footer__list-link {
-  color: #fff;
-  margin: 0 10px;
-  padding: 5px 10px;
-  text-decoration: none;
+  @include page-nav-links;
+
+  &:hover {
+    color: #FFEECC;
+  }
+
 }
 
-.page-footer__list-link:hover {
-  box-shadow: none;
-  color: #FFEECC;
-}
 
