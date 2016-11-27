@@ -1,37 +1,37 @@
-.site-footer {
+.page-footer {
   background-image: -webkit-linear-gradient(#00665F, #1D766F, #00665F);
   background-image: -moz-linear-gradient(#00665F, #1D766F, #00665F);
   background-image: linear-gradient(#00665F, #1D766F, #00665F);
 }
 
-.site-footer:after {
+.page-footer:after {
   /* clearfix hack */
   content: "";
   display: table;
   clear: both;
 }
 
-.site-footer__nav {
+.page-footer__nav {
   float: left;
   margin: 10px;
 }
 
-.site-footer__list {
+.page-footer__list {
   font-size: 1.1em;
 }
 
-.site-footer__list-item {
+.page-footer__list-item {
   float: left;
 }
 
-.site-footer_list_link {
+.page-footer_list_link {
   color: #fff;
   margin: 0 10px;
   padding: 5px 10px;
   text-decoration: none;
 }
 
-.site-footer__list_link:hover {
+.page-footer__list_link:hover {
   box-shadow: none;
   color: #FFEECC;
 }

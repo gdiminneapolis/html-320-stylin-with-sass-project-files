@@ -1,45 +1,45 @@
 
-.site-header {
+.page-header {
   background-color: #009D92;
   padding: 10px;
 }
-.site-header:after {
+.page-header:after {
   /* clearfix hack */
   content: "";
   display: table;
   clear: both;
 }
-.site-header__title {
+.page-header__title {
   color: #FFEECC;
   background: url('../images/icons/it.png') no-repeat 0 50%;
   padding-left: 40px;
   float: left;
 }
-.site-header--audiowide {
+.page-header--audiowide {
   font-family: 'Audiowide', cursive;
   font-size: 2.2em;
   line-height: 75px;
   text-shadow: 2px 2px rgba(255, 255, 255, 0.25);
 }
-.site-header__nav {
+.page-header__nav {
   float: right;
   font-size: 1.2em;
   margin-left: 20px;
 }
-.site-header__list {
+.page-header__list {
   line-height: 75px;
 }
-.site-header__list-item {
+.page-header__list-item {
   float: left;
 }
-.site-header__list-link {
+.page-header__list-link {
   color: #fff;
   margin: 0 10px;
   padding: 5px 10px;
   text-decoration: none;
   border-radius: 6px;
 }
-.site-header__list-link:hover {
+.page-header__list-link:hover {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   color: #FB000D;
   background-color: #fff;
