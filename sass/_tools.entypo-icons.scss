@@ -9,28 +9,8 @@
   font-style: normal;
 }
 
-.jump-nav {
-
-  &__link {
-    color: #565656;
-    font-family: 'EntypoRegular';
-    font-size: 70px;
-    line-height: 80px;
-    position: absolute;
-    text-decoration: none;
-    top: 0;
-
-    &:hover {
-      color: #BC2F36;
-    }
-  }
-
-  &--up {
-    left: 15px;
-  }
-  &--down {
-    right: 15px;
-  }
-
+@mixin entypo-icon($color, $content) {
+  color: $color;
+  content: $content;
+  font-family: 'EntypoRegular';
 }
-

@@ -1,0 +1,47 @@
+.feature-section {
+  @extend .clearfix;
+  margin-bottom: 1em;
+  position: relative;
+
+  &__header {
+
+  }
+  &__title {
+    background-color: rgb(60, 60, 60);
+    color: #FFF;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.0em;
+    font-weight: 400;
+    line-height: 80px;
+    margin: 0 0 0.5em 0;
+    text-align: center;
+
+    @media screen and (min-width: $mobile-width) {
+      font-size: 2.4em;
+    }
+  }
+  &__wrapper {
+    width: 100%;
+    max-width:1400px;
+    margin: 0 auto;
+  }
+  &--lede {
+    font-size: 1.1em;
+    @media screen and (min-width: $mobile-width) {
+      font-size: 1.6em;
+    }
+  }
+  &--shadow-red {
+    text-shadow: 1px 1px 2px #FB000D;
+  }
+  &--shadow-gold {
+    text-shadow: 1px 1px 2px #FFA700;
+  }
+  &--with-images {
+    height: auto;
+
+    @media screen and (min-width: $mobile-width) {
+      height: 500px;
+    }
+  }
+}

@@ -27,10 +27,16 @@
   &__title {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.1em;
+    font-weight: 700;
     line-height: 40px;
     margin: 0 0 0.3em 0;
     text-shadow: 1px 1px 2px #009D92;
     padding: 20px;
+    text-align: center;
+
+    @media screen and (min-width: $mobile-width) {
+      font-size: 1.6em;
+    }
   }
 
   &__life-span {

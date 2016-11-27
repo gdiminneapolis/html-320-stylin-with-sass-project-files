@@ -1,0 +1,26 @@
+
+
+.jump-nav {
+
+  &__link {
+    @include entypo-icon(#565656, '');
+    font-size: 70px;
+    line-height: 80px;
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+
+    &:hover {
+      color: #BC2F36;
+    }
+  }
+
+  &--up {
+    left: 15px;
+  }
+  &--down {
+    right: 15px;
+  }
+
+}
+
