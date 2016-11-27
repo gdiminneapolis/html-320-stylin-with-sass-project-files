@@ -1,8 +1,18 @@
 # Exercise 6, Nesting and Refactoring
 
+## Nesting
+
 Sass allows us to use nesting to organize and control the descent of our classes.
 
 In this exercise, use nesting for the already created page header and footer.
+
+Use the parent operator (`&`) to make this work well.
+
+*Note:* using the BEM naming, we don't really need to nest for specificity, so 
+it's okay to leave it out. Nesting in this case can make the amount of typing we do
+less, but since we've already done it one way, it's actually more typing.
+
+Still, it's a useful thing to do.
 
 ## Refactoring
 
@@ -61,4 +71,13 @@ Now go back to the page header file, and modify it:
 Do the same for page footer.
 
 There is another use of clearfix; see if you can find it and use the above tool again.
+
+### Common design specifications
+
+There are some repeated design specifications acroos the header and the footer.
+We need to be careful, however, just because they are repeated text, it does *not* 
+mean they are repeated intent.
+
+In this part of the exercise, it's up to you to decide if something should be 
+turned into a mixin, an extend, or a new component.
 
