@@ -21,24 +21,6 @@
 
 
 
-/* Main */
-#main section {
-  margin-bottom: 1em;
-  position: relative;
-}
-#main div.wrapper{
-    width: 100%;
-    max-width:1400px;
-    margin: 0 auto;
-}
-
-
-#main section:after {
-  /* clearfix hack */
-  content: "";
-  display: table;
-  clear: both;
-}
 
 
 /* Famous Women */

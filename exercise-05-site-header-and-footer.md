@@ -62,3 +62,8 @@ Refactor the header with navigation elements into the above classes.
 
 Make sure to import the two files into `sass/_objects.scss`.
 
+## Addendum
+
+I went ahead and changes the `<div id="main">` to `<main role="main">` to make it follow
+HTML5 presentation and ARIA rules. Along with this I extracted the `#main` styles into the
+`_elements.scss` file, and removed the leading `#` from them. 

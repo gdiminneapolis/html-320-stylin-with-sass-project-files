@@ -25,14 +25,6 @@ a:hover {
   color: #BC2F36;
 }
 
-h1 {
-  font-family: 'Audiowide', cursive;
-  font-size: 2.2em;
-  float: left;
-  line-height: 75px;
-  text-shadow: 2px 2px rgba(255, 255, 255, 0.25);
-}
-
 h2 {
   background-color: rgb(60, 60, 60);
   color: #FFF;
@@ -58,75 +50,19 @@ h4 {
   text-align: center;
 }
 
-// Extract the nav element entries and paste them in both the page header and page footer files
-/* Navigation */
-nav li {
-  float: left;
+/* Main */
+main section {
+  margin-bottom: 1em;
+  position: relative;
 }
-nav li a {
-  color: #fff;
-  margin: 0 10px;
-  padding: 5px 10px;
-  text-decoration: none;
-}
-nav li a:hover {
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  color: #FB000D;
+main div.wrapper{
+  width: 100%;
+  max-width:1400px;
+  margin: 0 auto;
 }
 
-// Extract the header element entries and paste them into the page header file
-/* Header */
-header {
-  background-color: #009D92;
-  padding: 10px;
-}
-header h1 {
-  color: #FFEECC;
-  background: url('../images/icons/it.png') no-repeat 0 50%;
-  padding-left: 40px;
-}
-header nav {
-  float: right;
-  font-size: 1.2em;
-  margin-left: 20px;
-}
-header nav li {
-  line-height: 75px;
-}
-header nav a {
-  border-radius: 6px;
-}
-header nav a:hover {
-  background-color: #fff;
-}
 
-header:after {
-  /* clearfix hack */
-  content: "";
-  display: table;
-  clear: both;
-}
-
-// Extract the footer element entries and paste them into the page footer file
-/* Footer */
-footer {
-  background-image: -webkit-linear-gradient(#00665F, #1D766F, #00665F);
-  background-image: -moz-linear-gradient(#00665F, #1D766F, #00665F);
-  background-image: linear-gradient(#00665F, #1D766F, #00665F);
-}
-
-footer nav {
-  float: left;
-  font-size: 1.1em;
-  margin: 10px;
-}
-
-footer nav a:hover {
-  box-shadow: none;
-  color: #FFEECC;
-}
-
-footer:after {
+main section:after {
   /* clearfix hack */
   content: "";
   display: table;

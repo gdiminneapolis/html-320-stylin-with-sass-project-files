@@ -1,9 +1,2 @@
-// This is where major page objects get imported.
-// Each page object will live under the `sass/objects/` directory (which you'll create)
-// This exercise is making the page header and page footer objects, so you'll need to import them:
-//
-// @import "objects/page-header";
-// @import "objects/page-footer";
-//
-// Remember to include the underscore on the file names, but omit it in the `@import` directive.
-// Also you don't have to include the filename extension in the `@import` directive, sass will figure it out.
+@import "objects/page-header";
+@import "objects/page-footer";
