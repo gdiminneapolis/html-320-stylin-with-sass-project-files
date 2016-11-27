@@ -1,0 +1,6 @@
+.page-body {
+  &--base-color {
+    background-color: $baseBackgroundColor;
+    color: $baseTextColor;
+  }
+}

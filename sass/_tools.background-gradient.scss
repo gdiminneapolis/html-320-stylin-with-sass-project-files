@@ -1,0 +1,5 @@
+@mixin background-gradient($start, $middle, $finish) {
+  background-image: -webkit-linear-gradient($start, $middle, $finish);
+  background-image: -moz-linear-gradient($start, $middle, $finish);
+  background-image: linear-gradient($start, $middle, $finish);
+}

@@ -1,5 +1,6 @@
 @mixin page-nav-links {
-  color: #fff;
+  color: $contrastLinkColor;
+  background-color: $contractLinkBackgroundColor;
   margin: 0 10px;
   padding: 5px 10px;
 }

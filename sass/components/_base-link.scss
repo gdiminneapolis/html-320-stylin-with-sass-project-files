@@ -1,0 +1,10 @@
+.base-link {
+  &--color {
+    color: $baseLinkColor;
+    background-color: $baseBackgroundColor;
+    &:hover {
+      color: $baseHoverLinkColor;
+      background-color: $baseHoverBackgroundColor;
+    }
+  }
+}

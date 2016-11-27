@@ -1,6 +1,7 @@
 
 .woman-card {
-  background-color: white;
+  color: $womanCardTextColor;
+  background-color: $womanCardBackgoundColor;
   min-height: 250px;
   opacity: 0.8;
 
@@ -30,7 +31,7 @@
     font-weight: 700;
     line-height: 40px;
     margin: 0 0 0.3em 0;
-    text-shadow: 1px 1px 2px #009D92;
+    text-shadow: 1px 1px 2px $womanCardTextShadow;
     padding: 20px;
     text-align: center;
 
@@ -40,7 +41,8 @@
   }
 
   &__life-span {
-    color: rgb(120, 120, 120);
+    color: $womanCardLifeSpanColor;
+    background-color: $womanCardLifeSpanBackgroundColor;
     font-size: 1em;
     text-align: center;
   }
@@ -65,6 +67,16 @@
     -webkit-transform-origin: 50% 0;
     -moz-transform-origin: 50% 0;
     transform-origin: 50% 0;
+  }
+
+  &--link-color {
+    color: $baseLinkColor;
+    background-color: $baseLinkBackgroundColor;
+    &:hover {
+      color: $baseHoverLinkColor;
+      background-color: $baseHoverBackgroundColor;
+
+    }
   }
 
 

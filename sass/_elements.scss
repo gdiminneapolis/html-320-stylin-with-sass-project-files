@@ -1,6 +1,5 @@
 /* Elements Styles */
 body {
-  background-color: rgb(241, 241, 241);
   font-family: 'Lato', Arial, sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -14,13 +13,9 @@ p {
 }
 
 a {
-  color: #1D766F;
   text-decoration: none;
 
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-}
-a:hover {
-  color: #BC2F36;
 }

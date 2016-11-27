@@ -3,7 +3,7 @@
 .jump-nav {
 
   &__link {
-    @include entypo-icon(#565656, '');
+    @include entypo-icon($contrastLinkColor, '');
     font-size: 70px;
     line-height: 80px;
     position: absolute;
@@ -11,7 +11,7 @@
     top: 0;
 
     &:hover {
-      color: #BC2F36;
+      color: $contrastBrightHoverLinkColor;
     }
   }
 

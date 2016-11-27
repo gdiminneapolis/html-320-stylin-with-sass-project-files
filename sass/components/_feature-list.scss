@@ -11,10 +11,23 @@
     max-width: 100%;
 
     &:hover {
-      background-color: #fff;
+      background-color: $featuredListHoverBackgroundColor;
       border-radius: 10px;
+      & .feature-list__list-item--link-color {
+        color: $baseHoverLinkColor;
+        background-color: $featuredListHoverBackgroundColor;
+      }
       &:before {
         opacity: 1;
+      }
+    }
+
+    &--link-color {
+      color: $baseLinkColor;
+      background-color: $baseBackgroundColor;
+      &:hover {
+        color: $baseHoverLinkColor;
+        background-color: $featuredListHoverBackgroundColor;
       }
     }
 
@@ -22,15 +35,15 @@
       font-size: 40px;
       opacity: 0.5;
       padding-right: 10px;
-      text-shadow: 0px 0px 2px #888;
+      text-shadow: 0px 0px 2px $featuredListTextShadow;
     }
 
     &--hearted:before {
-      @include entypo-icon(#FB000D, '6');
+      @include entypo-icon($heartIconColor, '6');
     }
 
     &--starred:before {
-      @include entypo-icon(#FFA700, '7')
+      @include entypo-icon($starIconColor, '7')
     }
 
     @media screen and (min-width: $mobile-width) {

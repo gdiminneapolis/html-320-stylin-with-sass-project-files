@@ -1,7 +1,7 @@
 
 .page-header {
   @extend .clearfix;
-  background-color: #009D92;
+  background-color: $primaryColor;
   padding: 10px;
 
   &__title {

@@ -1,0 +1,32 @@
+
+$primaryColor: #009D92 !default;
+
+$baseTextColor: black !default;
+$baseBackgroundColor: rgb(241, 241, 241) !default;
+
+$baseLinkColor: darken($primaryColor, 20%) !default;
+$baseLinkBackgroundColor: transparent !default;
+$baseHoverLinkColor: #BC2F36 !default;
+$baseHoverBackgroundColor: transparent !default;
+
+$contrastLinkColor: #fff !default;
+$contractLinkBackgroundColor: transparent !default;
+$contrastHoverLinkColor: #FFEECC !default;
+$contrastBrightHoverLinkColor: #FB000D !default;
+$contrastHoverLinkBackgroundColor: transparent !default;
+
+$featuredListHoverBackgroundColor: #fff !default;
+$featuredListTextShadow: #888 !default;
+
+$heartIconColor: #FB000D !default;
+$starIconColor: #FFA700 !default;
+
+$featureBannerBackgroundColor: rgb(60, 60, 60) !default;
+$featureBannerColor: #FFF !default;
+
+$womanCardTextShadow: #009D92 !default;
+$womanCardTextColor: inherit !default;
+$womanCardBackgroundColor: white !default;
+$womanCardLifeSpanColor: rgb(120, 120, 120) !default;
+$womanCardLifeSpanBackgroundColor: transparent !default;
+

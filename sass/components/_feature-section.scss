@@ -3,12 +3,11 @@
   margin-bottom: 1em;
   position: relative;
 
-  &__header {
-
+  &--header-color {
+    background-color: $featureBannerBackgroundColor;
+    color: $featureBannerColor;
   }
   &__title {
-    background-color: rgb(60, 60, 60);
-    color: #FFF;
     font-family: 'Quicksand', sans-serif;
     font-size: 2.0em;
     font-weight: 400;

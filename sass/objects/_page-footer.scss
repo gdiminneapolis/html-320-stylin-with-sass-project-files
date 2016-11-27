@@ -1,8 +1,7 @@
 .page-footer {
   @extend .clearfix;
-  background-image: -webkit-linear-gradient(#00665F, #1D766F, #00665F);
-  background-image: -moz-linear-gradient(#00665F, #1D766F, #00665F);
-  background-image: linear-gradient(#00665F, #1D766F, #00665F);
+  $endColor: darken($primaryColor, 3%);
+  @include background-gradient($endColor, $primaryColor, $endColor);
 }
 
 .page-footer__nav {
@@ -34,7 +33,8 @@
   }
 
   &:hover {
-    color: #FFEECC;
+    color: $contrastHoverLinkColor;
+    background-color: $contrastHoverLinkBackgroundColor;
   }
 
 }
