@@ -134,18 +134,7 @@ Each of the exercises we'll be working on is a separate git branch.
 At the start of each exercise, you will
 check out the branch to start working on the exercise.
 
-The exercise branches are:
-
-1. `exercise/01-new-sass-folder`
-2. `exercise/02-single-css-file`
-3. `exercise/03-itcss-structure`
-4. `exercise/04-extract-elements`
-5. `exercise/05-finding-objects-and-components`
-6. `exercise/06-setting-and-tools`
-7. `exercise/07-nesting-and-refactoring`
-8. `exercise/08-theming`
-9. `exercise/09-wrapping-up`
-
+The exercise branches are labeled `ex.01` through `ex.11` (subject to change!)
 You can see the branches on the remote `origin` with the command:
 
 ```bash
@@ -187,7 +176,7 @@ steps of the
 
 ```bash
 # Control-C to stop the watcher
-git add --all --verbose # Add changes to the index
+git add --all # Add changes to the index
 git commit -m "My work on exercise 1" # commit the changes to the local repo
 # we're skipping the 3rd part of the dance, you won't push any changes
 #
