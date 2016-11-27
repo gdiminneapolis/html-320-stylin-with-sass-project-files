@@ -1,13 +1,16 @@
 
 .woman-card {
-  color: $womanCardTextColor;
-  background-color: $womanCardBackgoundColor;
   min-height: 250px;
   opacity: 0.8;
 
   margin: 5px auto;
   padding: 2%;
   width: 80%;
+
+  &--card-color {
+    color: $womanCardTextColor;
+    background-color: $womanCardBackgroundColor;
+  }
 
   @media screen and (min-width: $mobile-width) {
     float: left;
@@ -26,10 +29,6 @@
   }
 
   &__title {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.1em;
-    font-weight: 700;
-    line-height: 40px;
     margin: 0 0 0.3em 0;
     text-shadow: 1px 1px 2px $womanCardTextShadow;
     padding: 20px;
@@ -40,10 +39,17 @@
     }
   }
 
+  &--title-font {
+    font-family: $womanCardTitleFont;
+    font-size: $womanCardTitleFontSize;
+    font-weight: $womanCardTitleFontWeight;
+    line-height: $womanCardTitleFontLineHeight;
+  }
+
   &__life-span {
     color: $womanCardLifeSpanColor;
     background-color: $womanCardLifeSpanBackgroundColor;
-    font-size: 1em;
+    font-size: $womanCardTitleFontSize;
     text-align: center;
   }
 

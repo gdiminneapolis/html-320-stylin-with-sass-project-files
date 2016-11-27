@@ -17,14 +17,15 @@
     }
   }
   &--audiowide {
-    font-family: 'Audiowide', cursive;
-    font-size: 2.2em;
-    line-height: 75px;
-    text-shadow: 2px 2px rgba(255, 255, 255, 0.25);
     display: none;
 
     @media screen and (min-width: $mobile-width){
       display: inherit;
+
+      font-family: $audiowideFont;
+      font-size: $audiowideFontSize;
+      line-height: $audiowideFontWeight;
+      text-shadow: 2px 2px $audiowideTextShadow;
     }
   }
   &__nav {

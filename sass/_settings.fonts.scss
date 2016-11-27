@@ -1,0 +1,22 @@
+@import url("http://fonts.googleapis.com/css?family=Audiowide|Quicksand:300,400,700|Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic");
+
+$baseFont: 'Lato', Arial, sans-serif !default;
+$baseFontSize: 16px !default;
+$baseFontWeight: 300 !default;
+$baseFontLineHeight: 1.2em !default;
+
+$audiowideFont: 'Audiowide', cursive !default;
+$audiowideFontSize: 2.2em !default;
+$audiowideFontWeight: 75px !default;
+
+$sectionTitleFont: 'Quicksand', sans-serif !default;
+
+$featureSectionTitleFont: $sectionTitleFont !default;
+$featureSectionTitleFontSize: 1.6em !default;
+$featureSectionTitleFontWeight: 400 !default;
+$featureSectionTitleFontLineHeight: 80px !default;
+
+$womanCardTitleFont: $sectionTitleFont !default;
+$womanCardTitleFontSize: 1.1em !default;
+$womanCardTitleFontWeight: 700 !default;
+$womanCardTitleFontLineHeight: 40px !default;

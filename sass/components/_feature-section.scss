@@ -8,15 +8,19 @@
     color: $featureBannerColor;
   }
   &__title {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 2.0em;
-    font-weight: 400;
-    line-height: 80px;
     margin: 0 0 0.5em 0;
     text-align: center;
 
+  }
+  &--title-font {
+    font-family: $featureSectionTitleFont;
+    font-size: $featureSectionTitleFontSize;
+    font-weight: $featureSectionTitleFontWeight;
+    line-height: $featureSectionTitleFontLineHeight;
+
     @media screen and (min-width: $mobile-width) {
-      font-size: 2.4em;
+      font-size: $featureSectionTitleFontSize * 1.5;
+      line-height: $featureSectionTitleFontLineHeight * 1.5;
     }
   }
   &__wrapper {
@@ -25,9 +29,11 @@
     margin: 0 auto;
   }
   &--lede {
-    font-size: 1.1em;
+    font-size: $baseFontSize;
+    line-height: $baseFontLineHeight;
     @media screen and (min-width: $mobile-width) {
-      font-size: 1.6em;
+      font-size: $baseFontSize * 1.5;
+      line-height: $baseFontLineHeight * 1.5;
     }
   }
   &--shadow-red {

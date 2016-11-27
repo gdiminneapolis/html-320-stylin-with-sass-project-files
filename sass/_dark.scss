@@ -1,0 +1,45 @@
+//
+//$primaryColor: #009D92 !default;
+$primaryColor: #5d05a0;
+//
+//$baseTextColor: black !default;
+$baseTextColor: rgb(241, 241, 241);
+//$baseBackgroundColor: rgb(241, 241, 241) !default;
+$baseBackgroundColor: black;
+
+//
+//$baseLinkColor: darken($primaryColor, 20%) !default;
+$baseLinkColor: lighten($primaryColor, 40%);
+//$baseLinkBackgroundColor: transparent !default;
+//$baseHoverLinkColor: #BC2F36 !default;
+$baseHoverLinkColor: lighten($baseLinkColor, 10%);
+//$baseHoverBackgroundColor: transparent !default;
+//
+//$contrastLinkColor: #fff !default;
+//$contractLinkBackgroundColor: transparent !default;
+//$contrastHoverLinkColor: #FFEECC !default;
+//$contrastBrightHoverLinkColor: #FB000D !default;
+//$contrastHoverLinkBackgroundColor: transparent !default;
+//
+//$featuredListHoverBackgroundColor: #fff !default;
+$featuredListHoverBackgroundColor: #333;
+//$featuredListTextShadow: #888 !default;
+//
+//$heartIconColor: #FB000D !default;
+//$starIconColor: #FFA700 !default;
+//
+//$featureBannerBackgroundColor: rgb(60, 60, 60) !default;
+//$featureBannerColor: #FFF !default;
+//
+//$womanCardTextShadow: #009D92 !default;
+$womanCardTextShadow: #9d7187;
+//$womanCardTextColor: inherit !default;
+//$womanCardBackgroundColor: white !default;
+$womanCardBackgroundColor: #333;
+//$womanCardLifeSpanColor: rgb(120, 120, 120) !default;
+$womanCardLifeSpanColor: lighten(rgb(120, 120, 120), 30%);
+//$womanCardLifeSpanBackgroundColor: transparent !default;
+//
+//
+//$audiowideTextShadow: rgba(255, 255, 255, 0.25) !default;
+
