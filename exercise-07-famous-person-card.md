@@ -44,5 +44,5 @@ media query `screen and (min-width: ...)`.
 This is also a great opportunity to create a couple of global settings in `_settings`:
 
 1. `$mobile-width` of 460px
-2. `$tablet-wdith` of 920px
+2. `$tablet-width` of 920px
 
