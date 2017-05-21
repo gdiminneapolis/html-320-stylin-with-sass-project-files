@@ -94,3 +94,20 @@ to make sure you have a copy of Chrome installed.
 Since we'll be doing a lot of CSS-type work, you're going to want to
 leave the development tools of the browser open while we work on the
 site.
+
+## Instructions
+
+See
+[Installing the Project Files](https://github.com/gdiminneapolis/html-320-stylin-with-sass-project-files/wiki/Installing-the-Project-Files) for
+instructions on cloning your fork and installing the watcher.
+
+See
+[Watching and Building the Sass Files](https://github.com/gdiminneapolis/html-320-stylin-with-sass-project-files/wiki/Watching-and-Building-the-Sass-Files) for
+information on running the watcher.
+
+See
+[Process for Working On Exercises](https://github.com/gdiminneapolis/html-320-stylin-with-sass-project-files/wiki/Watching-and-Building-the-Sass-Files) to
+understand how to work the exercises.
+
+Instructions for working on each exercise are in the README for the
+corresponding branch.
