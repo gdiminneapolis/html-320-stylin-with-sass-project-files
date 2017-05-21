@@ -2,7 +2,6 @@
   "name": "stylin-with-sass-class-project-files",
   "version": "2.0.0",
   "description": "practice folder for Stylin with Sass class",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "css": "node-sass --watch --recursive --output css --source-map true --source-map-contents sass",
@@ -14,7 +13,7 @@
     "class"
   ],
   "author": "tamouse@gmail.com",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.18.11",
     "concurrently": "^3.4.0",
