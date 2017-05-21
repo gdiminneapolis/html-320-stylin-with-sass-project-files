@@ -9,18 +9,18 @@ var browserSync = require('browser-sync');
 var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('sass', function () {
-   return gulp.src(
-       [
-           'sass/**/*.scss',
-           'sass/**/*.sass'
-       ])
-       .pipe(plumber())
-       .pipe(sourcemaps.init())
-       .pipe(sass().on('error', sass.logError))
-       .pipe(sourcemaps.write())
-       .pipe(plumber.stop())
-       .pipe(gulp.dest('css'))
-       .pipe(browserSync.stream())
+    return gulp.src(
+	[
+            'sass/**/*.scss',
+            'sass/**/*.sass'
+	])
+	.pipe(plumber())
+	.pipe(sourcemaps.init())
+	.pipe(sass().on('error', sass.logError))
+	.pipe(sourcemaps.write())
+	.pipe(plumber.stop())
+	.pipe(gulp.dest('css'))
+	.pipe(browserSync.stream())
 });
 
 gulp.task('build', ['sass']);
@@ -30,10 +30,10 @@ gulp.task('serve', ['build'], function(){
         server: '.'
     });
     gulp.watch([
-            './sass/**/*.scss',
-            './sass/**/*.sass'
-        ],
-        ['build']);
+        './sass/**/*.scss',
+        './sass/**/*.sass'
+    ],
+               ['build']);
     gulp.watch('*.html').on('change', browserSync.reload)
 });
 gulp.task('default', ['serve']);
