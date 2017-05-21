@@ -2,24 +2,22 @@
   "name": "stylin-with-sass-class-project-files",
   "version": "2.0.0",
   "description": "practice folder for Stylin with Sass class",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp"
+    "css": "node-sass --watch --recursive --output css --source-map true --source-map-contents sass",
+    "serve": "browser-sync start --server . --files . css/**/*.css css/**/*.css.map images/**/*",
+    "start": "concurrently \"npm run css\" \"npm run serve\""
   },
   "keywords": [
     "sass",
     "class"
   ],
   "author": "tamouse@gmail.com",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.17.5",
-    "gulp": "^3.9.1",
-    "gulp-plumber": "^1.1.0",
-    "gulp-sass": "^2.3.2",
-    "gulp-sourcemaps": "^2.2.0",
-    "gulp-task-listing": "^1.0.1"
+    "browser-sync": "^2.18.11",
+    "concurrently": "^3.4.0",
+    "node-sass": "^4.5.3"
   },
   "repository": {
     "type": "git",
