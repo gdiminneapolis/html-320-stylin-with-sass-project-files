@@ -106,7 +106,7 @@ See
 information on running the watcher.
 
 See
-[Process for Working On Exercises](https://github.com/gdiminneapolis/html-320-stylin-with-sass-project-files/wiki/Watching-and-Building-the-Sass-Files) to
+[Process for Working On Exercises](https://github.com/gdiminneapolis/html-320-stylin-with-sass-project-files/wiki/Process-For-Working-On-Exercises) to
 understand how to work the exercises.
 
 Instructions for working on each exercise are in the README for the
