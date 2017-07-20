@@ -10,38 +10,20 @@ branch and push it to your repo:
 
 Do this *before* you make any changes.
 
+### Do **NOT** start the watcher yet!
+
 In this exercise, you'll create files for Sass to compile.
 
 ## Steps:
 
+1. Create a directory `sass`
 2. Move the file `css/reset.css` to `sass/reset.scss`
 3. Move the file `css/styles.css` to `sass/styles.scss`
 
-**NOTE:** the file extension changes!!
+### **NOTE:** the file extension changes!!
 
-Before you restart the watcher, you need to make a couple changes to
-the `package.json` file. Open the file in your editor, and find the
-"scripts" section.
-
-Change the following two line:
-
-```javascript
-    "css": "# node-sass --output css --source-map true --source-map-contents sass",
-    "css:watch": "# node-sass --watch --recursive --output css --source-map true --source-map-contents sass",
-```
-
-To this:
-
-```javascript
-    "css": "node-sass --output css --source-map true --source-map-contents sass",
-    "css:watch": "node-sass --watch --recursive --output css --source-map true --source-map-contents sass",
-```
-
-I.e.: Remove the '#' comment symbol from the beginning of the second
-string in each line. These were commented out previously to prevent
-the watch from throwing error because it had nothing to watch.
-
-Restart the watcher (`npm start`). You should not get any errors, and
+**AFTER** you have complete those steps, you can start the watcher
+(`npm start`). You should not get any errors, and
 the browser should display our ladies.
 
 If you get an error, raise your hand and a TA can help.

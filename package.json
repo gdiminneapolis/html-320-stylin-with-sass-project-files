@@ -4,8 +4,8 @@
   "description": "practice folder for Stylin with Sass class",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "css": "# node-sass --output css --source-map true --source-map-contents sass",
-    "css:watch": "# node-sass --watch --recursive --output css --source-map true --source-map-contents sass",
+    "css": "node-sass --output css --source-map true --source-map-contents sass",
+    "css:watch": "node-sass --watch --recursive --output css --source-map true --source-map-contents sass",
     "serve": "browser-sync start --server . --files . css/**/*.css css/**/*.css.map images/**/*",
     "prestart": "npm run css",
     "start": "concurrently \"npm run css\" \"npm run serve\""
