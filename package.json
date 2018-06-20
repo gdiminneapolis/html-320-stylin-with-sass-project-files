@@ -8,7 +8,7 @@
     "css:watch": "node-sass --watch --recursive --output css --source-map true --source-map-contents sass",
     "serve": "browser-sync start --server . --files . css/**/*.css css/**/*.css.map images/**/*",
     "prestart": "npm run css",
-    "start": "concurrently \"npm run css\" \"npm run serve\""
+    "start": "concurrently \"npm run css:watch\" \"npm run serve\""
   },
   "keywords": [
     "sass",
